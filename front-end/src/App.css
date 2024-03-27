@@ -1,12 +1,18 @@
+:root {
+  --board-bg-color: #4caf50; /* New color */
+}
+
 #board {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px
+  /* background-color: #2196F3; */
+  background-color: var(--board-bg-color);
+  padding: 10px;
 }
 
 .cell {
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 30px;
@@ -34,7 +40,7 @@
   padding: 0;
   position: relative;
   float: left;
-  font-size: 2vw
+  font-size: 2vw;
 }
 
 html,
@@ -44,4 +50,6 @@ body {
   padding: 0;
 }
 
-.playable { background-color: red;}
+.playable {
+  background-color: rgba(0, 94, 255, 0.775);
+}
